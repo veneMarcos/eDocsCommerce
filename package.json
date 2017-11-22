@@ -32,6 +32,8 @@
     "@angular/language-service": "^5.0.0",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
     "typescript": "~2.4.2"
   }
 }

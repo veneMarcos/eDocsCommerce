@@ -11,6 +11,7 @@ import { MenuHeaderComponent } from './navigation/menu-header/menu-header.compon
 
 //config
 import { rootRouterConfig } from './app.routes';
+import { BasketComponent } from './basket/basket.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { rootRouterConfig } from './app.routes';
     HomeComponent,
     FooterComponent,
     TopMenuComponent,
-    MenuHeaderComponent
+    MenuHeaderComponent,
+    BasketComponent
   ],
   imports: [
     BrowserModule,

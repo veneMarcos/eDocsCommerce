@@ -1,3 +1,3 @@
 # eDocsCommerce
 
-eDocsCommerce - begin version
+eDocsCommerce - initial version

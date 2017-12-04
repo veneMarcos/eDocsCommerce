@@ -11,11 +11,14 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './navigation/footer/footer.component';
 import { TopMenuComponent } from './navigation/top-menu/top-menu.component';
 import { MenuHeaderComponent } from './navigation/menu-header/menu-header.component';
+import { BasketComponent } from './basket/basket.component';
+import { CatalogComponent } from './catalog/catalog.component';
+
+//Services
+import { CatalogService } from './catalog/catalog.service';
 
 //config
 import { rootRouterConfig } from './app.routes';
-import { BasketComponent } from './basket/basket.component';
-import { CatalogComponent } from './catalog/catalog.component';
 
 @NgModule({
   declarations: [
@@ -30,9 +33,9 @@ import { CatalogComponent } from './catalog/catalog.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot(rootRouterConfig, {useHash:false}),
-    SharedModule
+    SharedModule.forRoot()
   ],
-  providers: [],
+  providers: [CatalogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
